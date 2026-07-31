@@ -1,0 +1,6 @@
+public enum Categoria { // ENUM PARA ESTABLECER LAS CATEGORIAS PREDEFINIDAS
+    ACCION,
+    COMEDIA,
+    MIEDO,
+    ROMANCE
+}
