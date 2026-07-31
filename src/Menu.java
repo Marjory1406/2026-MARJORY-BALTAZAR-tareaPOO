@@ -34,7 +34,7 @@ public class Menu {
         int option = -1;
 
         while (option != 0){
-            System.out.println("\n Hola " + user.getNombre() "\n Qué te gustaria hacer hoy? ");
+            System.out.println("\n Hola " + user.getNombre() + "\n Qué te gustaria hacer hoy? ");
             System.out.println("1. Ver peliculas disponibles ");
             System.out.println("2. Mi Playlist ");
             System.out.println("0. Exit ");

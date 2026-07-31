@@ -1,13 +1,17 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+public class Main {
+  public static void main(String[] args){
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
+    //PELICULAS DISPONIBLES
+    Pelicula p1 = new Pelicula("SpiderMan", Categoria.ACCION, "+13", "Español", "145min");
+    Pelicula p2 = new Pelicula("El Conjuro", Categoria.MIEDO, "+18", "Español", "160min");
+    Pelicula p3 = new Pelicula("Barbie", Categoria.COMEDIA, "+9", "Español", "120min");
+    Pelicula p4 = new Pelicula("Call Me By Your Name", Categoria.ROMANCE, "+16", "Español", "160min");
+    Pelicula p5 = new Pelicula("Avatar", Categoria.ACCION, "+13", "Español", "145min");
+
+    Menu menu = new Menu();
+
+    User user = menu.crearUser();
+
+    menu.showMenu(user, p1,p2,p3,p4,p5);
   }
 }
