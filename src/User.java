@@ -8,13 +8,13 @@ public class User {
     private Playlist playlist;
 
     //METODOS
-    public User(String nombre, String email, int edad, String pais, String idioma, Playlist playlist){
+    public User(String nombre, String email, int edad, String pais, String idioma){
         this.nombre = nombre;
         this.email = email;
         this.edad = edad;
         this.pais = pais;
         this.idioma = idioma;
-        this.playlis= new Playlist();
+        this.playlist = new Playlist();
     }
     public String getNombre(){
         return nombre;
